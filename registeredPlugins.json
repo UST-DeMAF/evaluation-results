@@ -1,0 +1,26 @@
+[
+    {
+        "id": "f142e723-e658-4bc8-929a-5ee9e45b972d",
+        "technology": "bash",
+        "analysisType": "STATIC",
+        "queueName": "bashSTATIC"
+    },
+    {
+        "id": "8df9a6c6-92d1-42b5-a23f-f8e4a12e3de4",
+        "technology": "terraform",
+        "analysisType": "STATIC",
+        "queueName": "terraformSTATIC"
+    },
+    {
+        "id": "04f6c11d-4f25-48a1-a74f-4ab0293b0682",
+        "technology": "helm",
+        "analysisType": "STATIC",
+        "queueName": "helmSTATIC"
+    },
+    {
+        "id": "227924af-8e39-4e9d-b917-146d03a6658a",
+        "technology": "kubernetes",
+        "analysisType": "STATIC",
+        "queueName": "kubernetesSTATIC"
+    }
+]

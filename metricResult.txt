@@ -1,0 +1,8 @@
+Transformation process finished!
+Find the technology-agnostic deployment model under the following path:
+/home/ubuntu/tad/tadms/9dd79fc7-d9cd-4c0b-be9e-83fd865f2fe6.yaml
+Analysis Progress: 99.32432432432432%
+Comprehensibility: 91.55405405405406%
+Confidence: 87.91946308724832%
+Type Completeness Val1: 99.01960784313727%
+Type Completeness Val2: 97.2972972972973%

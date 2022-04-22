@@ -1,0 +1,25 @@
+2022-04-22 11:43:18.496  INFO 49467 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m             [2m (v2.5.10)[0;39m
+
+
+2022-04-22 11:43:18.530  INFO 49467 --- [main] u.t.k.KubernetesPluginApplication        : Starting KubernetesPluginApplication using Java 11.0.14.1 on Marcel-PC with PID 49467 (/home/ubuntu/tad/kubernetes-plugin/target/classes started by ubuntu in /home/ubuntu/tad/kubernetes-plugin)
+2022-04-22 11:43:18.531  INFO 49467 --- [main] u.t.k.KubernetesPluginApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 11:43:20.138  INFO 49467 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 11:43:20.307  INFO 49467 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8085
+2022-04-22 11:43:20.319  INFO 49467 --- [main] u.t.k.KubernetesPluginApplication        : Started KubernetesPluginApplication in 2.117 seconds (JVM running for 2.414)
+2022-04-22 11:43:20.321  INFO 49467 --- [main] u.t.k.r.PluginRegistrationRunner         : Registering Plugin
+2022-04-22 11:43:20.561  INFO 49467 --- [main] u.t.k.r.PluginRegistrationRunner         : Received response: { requestQueueName='kubernetesSTATIC', responseExchangeName='AnalysisTaskResponseExchange'}
+2022-04-22 11:43:20.570  INFO 49467 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-04-22 11:43:20.591  INFO 49467 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5ba26eb0:0/SimpleConnection@62a54948 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 41796]
+2022-04-22 11:46:26.324  INFO 49467 --- [SimpleAsyncTaskExecutor-1] u.t.k.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='cf4daf20-6318-4419-ab09-b9ac36c11d35', transformationProcessId='823774ba-25e2-460f-966e-fd3314eab6fa', commands='[kubectl create -f k8/.]', locations='[{ id='00497bb5-c816-4241-97f9-0c03eb628874', url='file:/home/ubuntu/fork/kube/k8/.', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-22 11:46:26.326  INFO 49467 --- [SimpleAsyncTaskExecutor-1] u.t.k.models.ModelsService               : Requesting technology-specific deployment model
+2022-04-22 11:46:26.360  INFO 49467 --- [SimpleAsyncTaskExecutor-1] u.t.k.models.ModelsService               : Requesting technology-agnostic deployment model
+2022-04-22 11:46:26.425  INFO 49467 --- [SimpleAsyncTaskExecutor-1] u.t.k.models.ModelsService               : Updating technology-specific deployment model
+2022-04-22 11:46:26.468  INFO 49467 --- [SimpleAsyncTaskExecutor-1] u.t.k.models.ModelsService               : Updating technology-agnostic deployment model
+2022-04-22 11:46:26.573  INFO 49467 --- [SimpleAsyncTaskExecutor-1] u.t.k.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
