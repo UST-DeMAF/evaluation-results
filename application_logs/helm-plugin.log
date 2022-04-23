@@ -1,4 +1,4 @@
-2022-04-22 11:43:16.643  INFO 49428 --- [main] o.s.boot.SpringApplication               : 
+2022-04-23 11:24:45.550  INFO 12577 --- [main] o.s.boot.SpringApplication               : 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -8,30 +8,33 @@
 [32m :: Spring Boot :: [39m             [2m (v2.5.10)[0;39m
 
 
-2022-04-22 11:43:16.706  INFO 49428 --- [main] u.tad.helmplugin.HelmPluginApplication   : Starting HelmPluginApplication using Java 11.0.14.1 on Marcel-PC with PID 49428 (/home/ubuntu/tad/helm-plugin/target/classes started by ubuntu in /home/ubuntu/tad/helm-plugin)
-2022-04-22 11:43:16.708  INFO 49428 --- [main] u.tad.helmplugin.HelmPluginApplication   : No active profile set, falling back to 1 default profile: "default"
-2022-04-22 11:43:18.463  INFO 49428 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-04-22 11:43:18.652  INFO 49428 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8086
-2022-04-22 11:43:18.685  INFO 49428 --- [main] u.tad.helmplugin.HelmPluginApplication   : Started HelmPluginApplication in 2.555 seconds (JVM running for 2.882)
-2022-04-22 11:43:18.687  INFO 49428 --- [main] u.t.h.r.PluginRegistrationRunner         : Registering Plugin
-2022-04-22 11:43:19.065  INFO 49428 --- [main] u.t.h.r.PluginRegistrationRunner         : Received response: { requestQueueName='helmSTATIC', responseExchangeName='AnalysisTaskResponseExchange'}
-2022-04-22 11:43:19.071  INFO 49428 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2022-04-22 11:43:19.173  INFO 49428 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5ba26eb0:0/SimpleConnection@317890ea [delegate=amqp://guest@127.0.0.1:5672/, localPort= 41790]
-2022-04-22 11:46:25.760  INFO 49428 --- [SimpleAsyncTaskExecutor-1] u.t.h.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='59a3f202-f12e-463b-a9b3-008150917567', transformationProcessId='823774ba-25e2-460f-966e-fd3314eab6fa', commands='[helm repo add bitnami https://charts.bitnami.com/bitnami, helm install mongo-cart --set auth.enabled=false bitnami/mongodb]', locations='[{ id='cf5b03b5-09ee-40c1-9871-cf613e60fc55', url='file:/home/ubuntu/fork/kube/', startLineNumber='0', endLineNumber='0'}]'}
-2022-04-22 11:46:25.763  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-specific deployment model
-2022-04-22 11:46:25.800  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-agnostic deployment model
-2022-04-22 11:46:25.862  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-specific deployment model
-2022-04-22 11:46:25.901  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-agnostic deployment model
-2022-04-22 11:46:25.940  INFO 49428 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
-2022-04-22 11:46:26.002  INFO 49428 --- [SimpleAsyncTaskExecutor-1] u.t.h.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='e3148cb5-d76a-4c82-ac9a-e1c736dc2c58', transformationProcessId='823774ba-25e2-460f-966e-fd3314eab6fa', commands='[helm repo add bitnami https://charts.bitnami.com/bitnami, helm install mongo-order --set auth.enabled=false bitnami/mongodb]', locations='[{ id='b2364fbf-4199-450a-a609-e5da8201852c', url='file:/home/ubuntu/fork/kube/', startLineNumber='0', endLineNumber='0'}]'}
-2022-04-22 11:46:26.002  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-specific deployment model
-2022-04-22 11:46:26.018  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-agnostic deployment model
-2022-04-22 11:46:26.062  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-specific deployment model
-2022-04-22 11:46:26.084  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-agnostic deployment model
-2022-04-22 11:46:26.115  INFO 49428 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
-2022-04-22 11:46:26.162  INFO 49428 --- [SimpleAsyncTaskExecutor-1] u.t.h.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='8fcf1f2a-e99e-4468-9c2d-154d337e7941', transformationProcessId='823774ba-25e2-460f-966e-fd3314eab6fa', commands='[helm repo add bitnami https://charts.bitnami.com/bitnami, helm install kafka bitnami/kafka]', locations='[{ id='733823eb-3bd8-488e-800d-064686b03ae0', url='file:/home/ubuntu/fork/kube/', startLineNumber='0', endLineNumber='0'}]'}
-2022-04-22 11:46:26.162  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-specific deployment model
-2022-04-22 11:46:26.174  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-agnostic deployment model
-2022-04-22 11:46:26.212  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-specific deployment model
-2022-04-22 11:46:26.233  INFO 49428 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-agnostic deployment model
-2022-04-22 11:46:26.259  INFO 49428 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
+2022-04-23 11:24:45.582  INFO 12577 --- [main] u.tad.helmplugin.HelmPluginApplication   : Starting HelmPluginApplication using Java 11.0.14.1 on Marcel-PC with PID 12577 (/home/ubuntu/tad/helm-plugin/target/classes started by ubuntu in /home/ubuntu/tad/helm-plugin)
+2022-04-23 11:24:45.583  INFO 12577 --- [main] u.tad.helmplugin.HelmPluginApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-23 11:24:46.600  INFO 12577 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-23 11:24:46.729  INFO 12577 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8086
+2022-04-23 11:24:46.742  INFO 12577 --- [main] u.tad.helmplugin.HelmPluginApplication   : Started HelmPluginApplication in 1.47 seconds (JVM running for 1.693)
+2022-04-23 11:24:46.743  INFO 12577 --- [main] u.t.h.r.PluginRegistrationRunner         : Registering Plugin
+2022-04-23 11:24:46.956  INFO 12577 --- [main] u.t.h.r.PluginRegistrationRunner         : Received response: { requestQueueName='helmSTATIC', responseExchangeName='AnalysisTaskResponseExchange'}
+2022-04-23 11:24:46.960  INFO 12577 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-04-23 11:24:47.006  INFO 12577 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#17690e14:0/SimpleConnection@6ad179b4 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55582]
+2022-04-23 11:25:12.170  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='3dca7553-e01d-421f-864e-474558bd5428', transformationProcessId='fc6750c3-dda2-4d04-8116-5808b7f37324', commands='[helm repo add bitnami https://charts.bitnami.com/bitnami, helm install mongo-cart --set auth.enabled=false bitnami/mongodb]', locations='[{ id='5ef9f5c7-e3c6-4ccb-aa54-b1e870435f30', url='file:/home/ubuntu/fork/kube/', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-23 11:25:12.172  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-specific deployment model
+2022-04-23 11:25:12.209  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-agnostic deployment model
+2022-04-23 11:25:15.915  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-specific deployment model
+2022-04-23 11:25:15.940  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-agnostic deployment model
+2022-04-23 11:25:15.987  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Sending EmbeddedDeploymentModelAnalysisRequest: { parentTaskId='3dca7553-e01d-421f-864e-474558bd5428', transformationProcessId='fc6750c3-dda2-4d04-8116-5808b7f37324', technology='kubernetes', commands='[]', locations='[{ id='null', url='file:/home/ubuntu/tad/helmTemplates/mongo-cart.yaml', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-23 11:25:15.994  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
+2022-04-23 11:25:16.356  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='34a8efae-745b-45da-bc93-c67a949e26fd', transformationProcessId='fc6750c3-dda2-4d04-8116-5808b7f37324', commands='[helm repo add bitnami https://charts.bitnami.com/bitnami, helm install mongo-order --set auth.enabled=false bitnami/mongodb]', locations='[{ id='76ad80ca-f275-44a0-8e65-69eb711f94ec', url='file:/home/ubuntu/fork/kube/', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-23 11:25:16.357  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-specific deployment model
+2022-04-23 11:25:16.384  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-agnostic deployment model
+2022-04-23 11:25:18.254  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-specific deployment model
+2022-04-23 11:25:18.272  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-agnostic deployment model
+2022-04-23 11:25:18.307  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Sending EmbeddedDeploymentModelAnalysisRequest: { parentTaskId='34a8efae-745b-45da-bc93-c67a949e26fd', transformationProcessId='fc6750c3-dda2-4d04-8116-5808b7f37324', technology='kubernetes', commands='[]', locations='[{ id='null', url='file:/home/ubuntu/tad/helmTemplates/mongo-order.yaml', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-23 11:25:18.309  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
+2022-04-23 11:25:18.588  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='fc7d6352-6332-4fe4-b212-d6c9b9d90e72', transformationProcessId='fc6750c3-dda2-4d04-8116-5808b7f37324', commands='[helm repo add bitnami https://charts.bitnami.com/bitnami, helm install kafka bitnami/kafka]', locations='[{ id='db423b5a-a8cd-44f7-ae6e-8315ba00f582', url='file:/home/ubuntu/fork/kube/', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-23 11:25:18.589  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-specific deployment model
+2022-04-23 11:25:18.611  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Requesting technology-agnostic deployment model
+2022-04-23 11:25:20.623  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-specific deployment model
+2022-04-23 11:25:20.642  INFO 12577 --- [SimpleAsyncTaskExecutor-1] ust.tad.helmplugin.models.ModelsService  : Updating technology-agnostic deployment model
+2022-04-23 11:25:20.677  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Sending EmbeddedDeploymentModelAnalysisRequest: { parentTaskId='fc7d6352-6332-4fe4-b212-d6c9b9d90e72', transformationProcessId='fc6750c3-dda2-4d04-8116-5808b7f37324', technology='kubernetes', commands='[]', locations='[{ id='null', url='file:/home/ubuntu/tad/helmTemplates/kafka.yaml', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-23 11:25:20.679  INFO 12577 --- [SimpleAsyncTaskExecutor-1] u.t.h.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response

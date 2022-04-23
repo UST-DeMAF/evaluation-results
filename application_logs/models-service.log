@@ -1,4 +1,4 @@
-2022-04-22 11:43:04.036  INFO 49083 --- [main] o.s.boot.SpringApplication               : 
+2022-04-23 11:23:47.199  INFO 11648 --- [main] o.s.boot.SpringApplication               : 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -8,50 +8,62 @@
 [32m :: Spring Boot :: [39m             [2m (v2.5.10)[0;39m
 
 
-2022-04-22 11:43:04.072  INFO 49083 --- [main] u.t.m.ModelsServiceApplication           : Starting ModelsServiceApplication using Java 11.0.14.1 on Marcel-PC with PID 49083 (/home/ubuntu/tad/models-service/target/classes started by ubuntu in /home/ubuntu/tad/models-service)
-2022-04-22 11:43:04.074  INFO 49083 --- [main] u.t.m.ModelsServiceApplication           : No active profile set, falling back to 1 default profile: "default"
-2022-04-22 11:43:04.755  INFO 49083 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2022-04-22 11:43:04.810  INFO 49083 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 5 MongoDB repository interfaces.
-2022-04-22 11:43:05.091  INFO 49083 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2022-04-22 11:43:05.098  INFO 49083 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-22 11:43:05.098  INFO 49083 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-04-22 11:43:05.133  INFO 49083 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-22 11:43:05.133  INFO 49083 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1015 ms
-2022-04-22 11:43:05.316  INFO 49083 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-2022-04-22 11:43:05.356  INFO 49083 --- [cluster-ClusterId{value='626278a940b46c2dff6d7eb2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
-2022-04-22 11:43:05.357  INFO 49083 --- [cluster-rtt-ClusterId{value='626278a940b46c2dff6d7eb2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:13}] to localhost:27017
-2022-04-22 11:43:05.358  INFO 49083 --- [cluster-ClusterId{value='626278a940b46c2dff6d7eb2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13551000}
-2022-04-22 11:43:05.610  INFO 49083 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:15}] to localhost:27017
-2022-04-22 11:43:05.943  INFO 49083 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-04-22 11:43:05.974  INFO 49083 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2022-04-22 11:43:05.986  INFO 49083 --- [main] u.t.m.ModelsServiceApplication           : Started ModelsServiceApplication in 2.272 seconds (JVM running for 2.49)
-2022-04-22 11:46:24.718  INFO 49083 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-22 11:46:24.719  INFO 49083 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-04-22 11:46:24.720  INFO 49083 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-04-22 11:46:24.778  INFO 49083 --- [http-nio-8081-exec-1] hnologySpecificDeploymentModelController : Initializing technology-specific deployment model
-2022-04-22 11:46:24.874  INFO 49083 --- [http-nio-8081-exec-2] hnologyAgnosticDeploymentModelController : Initializing technology-agnostic deployment model
-2022-04-22 11:46:24.967  INFO 49083 --- [http-nio-8081-exec-3] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
-2022-04-22 11:46:25.010  INFO 49083 --- [http-nio-8081-exec-4] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
-2022-04-22 11:46:25.073  INFO 49083 --- [http-nio-8081-exec-5] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
-2022-04-22 11:46:25.112  INFO 49083 --- [http-nio-8081-exec-6] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
-2022-04-22 11:46:25.542  INFO 49083 --- [http-nio-8081-exec-7] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
-2022-04-22 11:46:25.567  INFO 49083 --- [http-nio-8081-exec-8] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
-2022-04-22 11:46:25.618  INFO 49083 --- [http-nio-8081-exec-9] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
-2022-04-22 11:46:25.643  INFO 49083 --- [http-nio-8081-exec-10] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
-2022-04-22 11:46:25.776  INFO 49083 --- [http-nio-8081-exec-1] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
-2022-04-22 11:46:25.804  INFO 49083 --- [http-nio-8081-exec-2] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
-2022-04-22 11:46:25.880  INFO 49083 --- [http-nio-8081-exec-3] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
-2022-04-22 11:46:25.914  INFO 49083 --- [http-nio-8081-exec-4] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
-2022-04-22 11:46:26.005  INFO 49083 --- [http-nio-8081-exec-5] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
-2022-04-22 11:46:26.020  INFO 49083 --- [http-nio-8081-exec-6] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
-2022-04-22 11:46:26.069  INFO 49083 --- [http-nio-8081-exec-7] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
-2022-04-22 11:46:26.090  INFO 49083 --- [http-nio-8081-exec-8] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
-2022-04-22 11:46:26.165  INFO 49083 --- [http-nio-8081-exec-9] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
-2022-04-22 11:46:26.176  INFO 49083 --- [http-nio-8081-exec-10] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
-2022-04-22 11:46:26.218  INFO 49083 --- [http-nio-8081-exec-1] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
-2022-04-22 11:46:26.238  INFO 49083 --- [http-nio-8081-exec-2] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
-2022-04-22 11:46:26.339  INFO 49083 --- [http-nio-8081-exec-3] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
-2022-04-22 11:46:26.364  INFO 49083 --- [http-nio-8081-exec-4] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
-2022-04-22 11:46:26.449  INFO 49083 --- [http-nio-8081-exec-5] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
-2022-04-22 11:46:26.494  INFO 49083 --- [http-nio-8081-exec-6] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
-2022-04-22 11:46:41.653  INFO 49083 --- [SpringApplicationShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:15}] to localhost:27017 because the pool has been closed.
+2022-04-23 11:23:47.266  INFO 11648 --- [main] u.t.m.ModelsServiceApplication           : Starting ModelsServiceApplication using Java 11.0.14.1 on Marcel-PC with PID 11648 (/home/ubuntu/tad/models-service/target/classes started by ubuntu in /home/ubuntu/tad/models-service)
+2022-04-23 11:23:47.267  INFO 11648 --- [main] u.t.m.ModelsServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-23 11:23:47.923  INFO 11648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-04-23 11:23:47.967  INFO 11648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 5 MongoDB repository interfaces.
+2022-04-23 11:23:48.258  INFO 11648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-04-23 11:23:48.266  INFO 11648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-23 11:23:48.266  INFO 11648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-23 11:23:48.305  INFO 11648 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-23 11:23:48.306  INFO 11648 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 998 ms
+2022-04-23 11:23:48.516  INFO 11648 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-04-23 11:23:48.585  INFO 11648 --- [cluster-rtt-ClusterId{value='6263c5a40fc638792fb15c2e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2022-04-23 11:23:48.585  INFO 11648 --- [cluster-ClusterId{value='6263c5a40fc638792fb15c2e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2022-04-23 11:23:48.588  INFO 11648 --- [cluster-ClusterId{value='6263c5a40fc638792fb15c2e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21805000}
+2022-04-23 11:23:48.908  INFO 11648 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:15}] to localhost:27017
+2022-04-23 11:23:49.298  INFO 11648 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-23 11:23:49.325  INFO 11648 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-04-23 11:23:49.336  INFO 11648 --- [main] u.t.m.ModelsServiceApplication           : Started ModelsServiceApplication in 2.482 seconds (JVM running for 2.727)
+2022-04-23 11:25:10.919  INFO 11648 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-23 11:25:10.919  INFO 11648 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-23 11:25:10.921  INFO 11648 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-23 11:25:10.980  INFO 11648 --- [http-nio-8081-exec-1] hnologySpecificDeploymentModelController : Initializing technology-specific deployment model
+2022-04-23 11:25:11.131  INFO 11648 --- [http-nio-8081-exec-2] hnologyAgnosticDeploymentModelController : Initializing technology-agnostic deployment model
+2022-04-23 11:25:11.312  INFO 11648 --- [http-nio-8081-exec-3] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:11.370  INFO 11648 --- [http-nio-8081-exec-4] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:11.439  INFO 11648 --- [http-nio-8081-exec-5] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:11.486  INFO 11648 --- [http-nio-8081-exec-6] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:11.874  INFO 11648 --- [http-nio-8081-exec-7] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:11.899  INFO 11648 --- [http-nio-8081-exec-8] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:11.951  INFO 11648 --- [http-nio-8081-exec-9] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:11.974  INFO 11648 --- [http-nio-8081-exec-10] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:12.186  INFO 11648 --- [http-nio-8081-exec-1] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:12.213  INFO 11648 --- [http-nio-8081-exec-2] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:15.932  INFO 11648 --- [http-nio-8081-exec-3] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:15.952  INFO 11648 --- [http-nio-8081-exec-4] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:16.102  INFO 11648 --- [http-nio-8081-exec-5] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:16.132  INFO 11648 --- [http-nio-8081-exec-6] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:16.211  INFO 11648 --- [http-nio-8081-exec-7] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:16.239  INFO 11648 --- [http-nio-8081-exec-8] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:16.359  INFO 11648 --- [http-nio-8081-exec-9] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:16.388  INFO 11648 --- [http-nio-8081-exec-10] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:18.260  INFO 11648 --- [http-nio-8081-exec-1] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:18.279  INFO 11648 --- [http-nio-8081-exec-2] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:18.393  INFO 11648 --- [http-nio-8081-exec-3] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:18.415  INFO 11648 --- [http-nio-8081-exec-4] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:18.469  INFO 11648 --- [http-nio-8081-exec-5] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:18.488  INFO 11648 --- [http-nio-8081-exec-6] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:18.591  INFO 11648 --- [http-nio-8081-exec-7] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:18.614  INFO 11648 --- [http-nio-8081-exec-8] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:20.630  INFO 11648 --- [http-nio-8081-exec-9] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:20.648  INFO 11648 --- [http-nio-8081-exec-10] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:20.753  INFO 11648 --- [http-nio-8081-exec-1] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:20.775  INFO 11648 --- [http-nio-8081-exec-2] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:20.849  INFO 11648 --- [http-nio-8081-exec-3] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:20.863  INFO 11648 --- [http-nio-8081-exec-4] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:20.965  INFO 11648 --- [http-nio-8081-exec-5] hnologySpecificDeploymentModelController : Sending technology-specific deployment model
+2022-04-23 11:25:20.998  INFO 11648 --- [http-nio-8081-exec-6] hnologyAgnosticDeploymentModelController : Sending technology-agnostic deployment model
+2022-04-23 11:25:21.099  INFO 11648 --- [http-nio-8081-exec-7] hnologySpecificDeploymentModelController : Updating technology-specific deployment model
+2022-04-23 11:25:21.122  INFO 11648 --- [http-nio-8081-exec-8] hnologyAgnosticDeploymentModelController : Updating technology-agnostic deployment model
+2022-04-23 11:25:55.373  INFO 11648 --- [SpringApplicationShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:15}] to localhost:27017 because the pool has been closed.

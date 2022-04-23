@@ -1,4 +1,4 @@
-2022-04-22 11:43:13.773  INFO 49332 --- [main] o.s.boot.SpringApplication               : 
+2022-04-23 11:24:39.739  INFO 12482 --- [main] o.s.boot.SpringApplication               : 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -8,18 +8,18 @@
 [32m :: Spring Boot :: [39m             [2m (v2.5.10)[0;39m
 
 
-2022-04-22 11:43:13.807  INFO 49332 --- [main] u.t.t.TerraformPluginApplication         : Starting TerraformPluginApplication using Java 11.0.14.1 on Marcel-PC with PID 49332 (/home/ubuntu/tad/terraform-plugin/target/classes started by ubuntu in /home/ubuntu/tad/terraform-plugin)
-2022-04-22 11:43:13.808  INFO 49332 --- [main] u.t.t.TerraformPluginApplication         : No active profile set, falling back to 1 default profile: "default"
-2022-04-22 11:43:15.896  INFO 49332 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2022-04-22 11:43:16.132  INFO 49332 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8084
-2022-04-22 11:43:16.152  INFO 49332 --- [main] u.t.t.TerraformPluginApplication         : Started TerraformPluginApplication in 2.757 seconds (JVM running for 3.116)
-2022-04-22 11:43:16.156  INFO 49332 --- [main] u.t.t.r.PluginRegistrationRunner         : Registering Plugin
-2022-04-22 11:43:16.540  INFO 49332 --- [main] u.t.t.r.PluginRegistrationRunner         : Received response: { requestQueueName='terraformSTATIC', responseExchangeName='AnalysisTaskResponseExchange'}
-2022-04-22 11:43:16.546  INFO 49332 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
-2022-04-22 11:43:16.582  INFO 49332 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#29138d3a:0/SimpleConnection@5232e3f1 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 41784]
-2022-04-22 11:46:25.524  INFO 49332 --- [SimpleAsyncTaskExecutor-1] u.t.t.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='0bd8f277-d04b-4d19-a34c-f66ca19deec2', transformationProcessId='823774ba-25e2-460f-966e-fd3314eab6fa', commands='[terraform -chdir=terraform/ init, terraform -chdir=terraform/ apply -auto-approve]', locations='[{ id='42133e46-c49c-4c38-89f7-861f51e463ea', url='file:/home/ubuntu/fork/kube/terraform/', startLineNumber='0', endLineNumber='0'}]'}
-2022-04-22 11:46:25.527  INFO 49332 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Requesting technology-specific deployment model
-2022-04-22 11:46:25.563  INFO 49332 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Requesting technology-agnostic deployment model
-2022-04-22 11:46:25.599  INFO 49332 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Updating technology-specific deployment model
-2022-04-22 11:46:25.626  INFO 49332 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Updating technology-agnostic deployment model
-2022-04-22 11:46:25.686  INFO 49332 --- [SimpleAsyncTaskExecutor-1] u.t.t.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
+2022-04-23 11:24:39.774  INFO 12482 --- [main] u.t.t.TerraformPluginApplication         : Starting TerraformPluginApplication using Java 11.0.14.1 on Marcel-PC with PID 12482 (/home/ubuntu/tad/terraform-plugin/target/classes started by ubuntu in /home/ubuntu/tad/terraform-plugin)
+2022-04-23 11:24:39.775  INFO 12482 --- [main] u.t.t.TerraformPluginApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-04-23 11:24:40.839  INFO 12482 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-23 11:24:40.993  INFO 12482 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8084
+2022-04-23 11:24:41.005  INFO 12482 --- [main] u.t.t.TerraformPluginApplication         : Started TerraformPluginApplication in 1.55 seconds (JVM running for 1.764)
+2022-04-23 11:24:41.006  INFO 12482 --- [main] u.t.t.r.PluginRegistrationRunner         : Registering Plugin
+2022-04-23 11:24:41.225  INFO 12482 --- [main] u.t.t.r.PluginRegistrationRunner         : Received response: { requestQueueName='terraformSTATIC', responseExchangeName='AnalysisTaskResponseExchange'}
+2022-04-23 11:24:41.230  INFO 12482 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-04-23 11:24:41.279  INFO 12482 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#108a46d6:0/SimpleConnection@19e21f89 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55576]
+2022-04-23 11:25:11.859  INFO 12482 --- [SimpleAsyncTaskExecutor-1] u.t.t.analysistask.AnalysisTaskReceiver  : received AnalysisTaskStartRequest: { taskId='fd9bc49b-ccca-4c3c-854d-7137b8813f2e', transformationProcessId='fc6750c3-dda2-4d04-8116-5808b7f37324', commands='[terraform -chdir=terraform/ init, terraform -chdir=terraform/ apply -auto-approve]', locations='[{ id='e935e3a1-cd00-4dc1-b31b-54e8f22427d9', url='file:/home/ubuntu/fork/kube/terraform/', startLineNumber='0', endLineNumber='0'}]'}
+2022-04-23 11:25:11.861  INFO 12482 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Requesting technology-specific deployment model
+2022-04-23 11:25:11.894  INFO 12482 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Requesting technology-agnostic deployment model
+2022-04-23 11:25:11.932  INFO 12482 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Updating technology-specific deployment model
+2022-04-23 11:25:11.959  INFO 12482 --- [SimpleAsyncTaskExecutor-1] u.t.t.models.ModelsService               : Updating technology-agnostic deployment model
+2022-04-23 11:25:12.073  INFO 12482 --- [SimpleAsyncTaskExecutor-1] u.t.t.a.AnalysisTaskResponseSender       : Transformation completed successfully, sending success response
