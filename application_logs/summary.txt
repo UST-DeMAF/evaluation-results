@@ -1,0 +1,55 @@
+# Summary of the events from the viewpoint of the analysis manager
+
+Registers plugin bash
+Registers plugin terraform
+Registers plugin helm 
+Registers plugin kubernetes
+
+Receives transform command from user
+Sends request to models service for initialiing internal deployment models
+
+Sends AnalysisTask to plugin bash (azure-start.sh)
+Receives EmbeddedDeploymentModelAnalysisRequest: for terraform (terraform/)
+Receives EmbeddedDeploymentModelAnalysisRequest: for helm (mongo-cart)
+Receives EmbeddedDeploymentModelAnalysisRequest: for helm (mongo-order)
+Receives EmbeddedDeploymentModelAnalysisRequest: for helm (kafka)
+Receives EmbeddedDeploymentModelAnalysisRequest: for kubernetes (k8/)
+Receives successful AnalysisTaskResponse from plugin bash
+Unable to find dynamic plugin for bash
+
+Sends AnalysisTask to plugin terraform (terraform/)
+Receives successful AnalysisTaskResponse from plugin terraform
+Unable to find dynamic plugin for terraform
+
+Sends AnalysisTask to plugin helm (mongo-cart)
+Receives EmbeddedDeploymentModelAnalysisRequest: for kubernetes (mongo-cart)
+Receives successful AnalysisTaskResponse from plugin helm
+Unable to find dynamic plugin for helm
+
+Sends AnalysisTask to plugin kubernetes (mongo-cart)
+Receives successful AnalysisTaskResponse from plugin kubernetes
+Unable to find dynamic plugin for kubernetes
+
+Sends AnalysisTask to plugin helm (mongo-order)
+Receives EmbeddedDeploymentModelAnalysisRequest: for kubernetes (mongo-order)
+Receives successful AnalysisTaskResponse from plugin helm
+Unable to find dynamic plugin for helm
+
+Sends AnalysisTask to plugin kubernetes (mongo-order)
+Receives successful AnalysisTaskResponse from plugin kubernetes
+Unable to find dynamic plugin for kubernetes
+
+Sends AnalysisTask to plugin helm (kafka)
+Receives EmbeddedDeploymentModelAnalysisRequest: for kubernetes (kafka)
+Receives successful AnalysisTaskResponse from plugin helm
+Unable to find dynamic plugin for helm
+
+Sends AnalysisTask to plugin kubernetes (kafka)
+Receives successful AnalysisTaskResponse from plugin kubernetes
+Unable to find dynamic plugin for kubernetes
+
+Sends AnalysisTask to plugin helm (k8/)
+Receives successful AnalysisTaskResponse from plugin kubernetes
+Unable to find dynamic plugin for kubernetes
+
+Requests result from models service
